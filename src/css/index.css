@@ -26,7 +26,6 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .construction-content {
@@ -34,9 +33,6 @@ body {
     color: white;
     max-width: 600px;
     padding: 2rem;
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 .construction-content h1 {
@@ -52,21 +48,80 @@ body {
     color: #ccc;
 }
 
-.progress-bar {
-    width: 100%;
-    height: 10px;
-    background-color: #333;
-    border-radius: 5px;
-    overflow: hidden;
-    margin: 2rem 0;
+/* Favicon related styles */
+.favicon-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    text-decoration: none;
+    display: block;
 }
 
-.progress {
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(90deg, #8ACAFF, #9400D3);
-    border-radius: 5px;
-    animation: progress-animation 2s ease-in-out infinite alternate;
+.favicon {
+    position: static;
+    top: auto;
+    left: auto;
+    z-index: auto;
+}
+
+.favicon img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.favicon img:hover {
+    transform: scale(1.1);
+}
+
+.favicon-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url('../images/untitledlogoSynClitex.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Alternative favicon styles for different sizes */
+.favicon-sm {
+    width: 16px;
+    height: 16px;
+}
+
+.favicon-md {
+    width: 32px;
+    height: 32px;
+}
+
+.favicon-lg {
+    width: 64px;
+    height: 64px;
+}
+
+footer { 
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    background-color: rgba(138,202,255,0.7);
+}
+
+footer a,p{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin: 0 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 @keyframes progress-animation {

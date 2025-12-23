@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Clitex 网站建设中">
-    <title>Clitex - Under Construction</title>
+    <meta name="author" content="SynClitex"></meta>
+    <link rel="icon" type="image/png" href="./src/images/untitledlogoSynClitex.png">
+    <title>网站正在建设中</title>
     <link rel="stylesheet" href="./src/css/index.css">
 </head>
+
 <body>
-    <canvas class="background"></canvas>
-    
+    <div class="background"></div>
+    <a href="https://github.com/SynClitex" target="_blank" class="favicon-link">
+        <div class="favicon">
+            <img src="./src/images/titledlogoSynClitex.png" alt="logo"></img>
+        </div>
+    </a>
     <div class="construction-container">
         <div class="construction-content">
-            <h1>网站建设中</h1>
-            <p class="subtitle">Website Under Construction</p>
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-            <p class="message">我们正在努力构建一个令人惊叹的网站，请稍后访问。</p>
-            <p class="contact">如有紧急事务，请联系：<a href="mailto:contact@clitex.com">contact@clitex.com</a></p>
+            <h1>网站正在建设中</h1>
+            <p class="subtitle">UNDER CONSTRUCTION</p>
+
+            <p class="contact">联系方式：<a href="mailto:Chronabys@outlook.com">Chronabys@outlook.com</a></p>
         </div>
     </div>
+    <footer>
+        <p><a href="https://github.com/SynClitex/SynClitex.github.io">Copyright © 2025 思汀Syn.Clitex,保留所有权利</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: ".background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x428adb,
+            size: 0.90
+        })
+    </script>
     
-    <script src="./src/js/particles.min.js"></script>
-    <script src="./src/js/index.js"></script>
 </body>
 </html>
