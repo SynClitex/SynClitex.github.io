@@ -2,12 +2,94 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
 }
 
 .background {
-    position:absolute;
-    display:block;
+    position: fixed;
+    display: block;
     top: 0;
     left: 0;
     z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.construction-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.construction-content {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.construction-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #8ACAFF;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+.progress {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #8ACAFF, #9400D3);
+    border-radius: 5px;
+    animation: progress-animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes progress-animation {
+    0% { width: 30%; }
+    100% { width: 70%; }
+}
+
+.message {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.contact a {
+    color: #8ACAFF;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
