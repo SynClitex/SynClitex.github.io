@@ -36,19 +36,18 @@ body {
 }
 
 .construction-content h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 0.5rem;
     color: #8ACAFF;
 }
 
 .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin-top: 0;
     margin-bottom: 2rem;
     color: #ccc;
 }
 
-/* Favicon related styles */
 .favicon-link {
     position: fixed;
     top: 20px;
@@ -86,22 +85,6 @@ body {
     background-position: center;
     display: inline-block;
     vertical-align: middle;
-}
-
-/* Alternative favicon styles for different sizes */
-.favicon-sm {
-    width: 16px;
-    height: 16px;
-}
-
-.favicon-md {
-    width: 32px;
-    height: 32px;
-}
-
-.favicon-lg {
-    width: 64px;
-    height: 64px;
 }
 
 footer { 
